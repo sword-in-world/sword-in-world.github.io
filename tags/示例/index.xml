@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>示例 on SWORD-IN-WORLD</title>
+		<link>https://sword-in-world.github.io/tags/%E7%A4%BA%E4%BE%8B/</link>
+		<description>Recent content in 示例 on SWORD-IN-WORLD</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 02 May 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://sword-in-world.github.io/tags/%E7%A4%BA%E4%BE%8B/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>画板示例文章</title>
+				<link>https://sword-in-world.github.io/excalidraw/demo/</link>
+				<pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+				<guid>https://sword-in-world.github.io/excalidraw/demo/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;此处文字会放在页面上方，该目录下的excalidraw文件会自动渲染为画板，名称无所谓&lt;/strong&gt;&lt;br&gt;&#xA;&lt;strong&gt;可以通过comment: false开关评论&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>测试 on SWORD-IN-WORLD</title>
+		<link>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/</link>
+		<description>Recent content in 测试 on SWORD-IN-WORLD</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>画廊文章示例</title>
+				<link>http://localhost:1313/posts/old-painting/</link>
+				<pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/old-painting/</guid>
+				<description>&lt;p&gt;画廊demo文章&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt1.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&#xA;这是弹幕示例&#xA;像这样会变成另一个弹幕&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt2.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&#xA;直接放下一张图片即可渲染&#xA;并非必须要写弹幕&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt3.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

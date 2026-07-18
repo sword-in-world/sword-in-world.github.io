@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>博客 on SWORD-IN-WORLD</title>
+		<link>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/</link>
+		<description>Recent content in 博客 on SWORD-IN-WORLD</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>hugo主题aiovtue迎来大更新</title>
+				<link>http://localhost:1313/posts/hugo-aiovtueupdate/</link>
+				<pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/hugo-aiovtueupdate/</guid>
+				<description>&lt;h3 id=&#34;简介&#34;&gt;简介&lt;/h3&gt;&#xA;&lt;p&gt;经过一段时间的优化和更新，现在&lt;em&gt;hugo-aiovtue&lt;/em&gt; 主题迎来第一次大更新，涵盖交互优化，功能新增等，改变比较大，不过大部分功能都提供了开关，不喜欢新样式的可以不启用或者不更新，下面对更新内容进行介绍，对了，开源地址&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,214 @@
+/* G36 看板娘 - Live2D 浮动小人样式 v3 */
+/* 修复：镂空点击 + 气泡拉近 + 边缘修复 + 拖拽优化 */
+
+/* ===== 容器 ===== */
+.saber-widget {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  z-index: 9998;
+  display: none;
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s;
+  transform-origin: left bottom;
+}
+@media (min-width: 768px) {
+  .saber-widget { display: block; }
+}
+
+/* ===== 身体区域 ===== */
+.saber-body {
+  position: relative;
+  width: 360px;
+  height: 540px;
+  pointer-events: auto;
+  cursor: grab;
+  user-select: none;
+}
+.saber-body:active { cursor: grabbing; }
+.saber-body canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* hover 微微放大 */
+.saber-body:hover {
+  filter: brightness(1.05);
+}
+
+/* ===== 对话气泡 ===== */
+.saber-bubble {
+  position: absolute;
+  bottom: 420px; /* 头顶上方适中 */
+  left: 0;        /* 左对齐到人物 */
+  transform: translateX(0);
+  min-width: 100px;
+  max-width: 200px;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.95);
+  border: 2px solid #f0a0c8;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  box-shadow: 0 2px 8px rgba(240,160,200,0.2);
+  word-break: break-word;
+  pointer-events: none;   /* 隐藏时穿透，不挡页面交互 */
+}
+.saber-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 24px;
+  transform: translateX(0);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #f0a0c8;
+}
+.saber-bubble.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* ===== 隐藏状态 — 探个脑袋 ===== */
+.saber-widget.peek-hidden .saber-body::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(to bottom, transparent, #f0a0c8, #f0a0c8, transparent);
+  animation: peek-glow 2s ease-in-out infinite;
+  z-index: 10;
+}
+@keyframes peek-glow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.saber-widget.peek-hidden .saber-bubble {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+.saber-widget.peek-hidden .saber-body {
+  cursor: pointer;
+}
+.saber-widget.peek-hidden .saber-controls {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ===== 控制按钮 ===== */
+.saber-controls {
+  position: absolute;
+  bottom: 10px;
+  right: -36px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 100;
+  transition: opacity 0.3s;
+}
+.saber-ctrl-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(17,17,17,0.6);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.saber-ctrl-btn:hover {
+  background: rgba(17,17,17,0.85);
+  transform: scale(1.1);
+}
+
+.saber-zoom-btn::before {
+  content: '⊞';
+  font-size: 16px;
+  line-height: 1;
+}
+
+.saber-hide-btn::before {
+  content: '◀';
+  font-size: 14px;
+  line-height: 1;
+  transition: transform 0.3s;
+}
+
+.saber-hide-btn.hidden-state::before {
+  content: '▶';
+}
+
+.saber-widget.peek-hidden .saber-controls {
+  opacity: 1;
+  pointer-events: auto;
+  right: 0;
+  flex-direction: row;
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 3px;
+}
+
+/* ===== 夜间模式适配 ===== */
+html.dark .saber-bubble {
+  background: rgba(17,17,17,0.95);
+  color: #fff;
+  border-color: #a78bfa;
+}
+html.dark .saber-bubble::after {
+  border-top-color: #a78bfa;
+}
+html.dark .saber-widget.peek-hidden .saber-body::before {
+  background: linear-gradient(to bottom, transparent, #a78bfa, #a78bfa, transparent);
+}
+html.dark .saber-ctrl-btn {
+  background: rgba(255,255,255,0.12);
+}
+html.dark .saber-ctrl-btn:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* ===== 加载动画 ===== */
+.saber-widget.loaded .saber-body {
+  animation: saber-pop 0.5s ease-out;
+}
+@keyframes saber-pop {
+  0% { transform: translateY(60px) scale(0.6); opacity: 0; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+/* ===== 点击震动 ===== */
+@keyframes saber-shake {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-4deg); }
+  40% { transform: rotate(4deg); }
+  60% { transform: rotate(-3deg); }
+  80% { transform: rotate(3deg); }
+}
+
+/* 拖拽时禁用transition */
+.saber-widget.dragging {
+  transition: none !important;
+}
+
+/* 移动端 */
+@media (max-width: 767px) {
+  .saber-controls { display: none; }
+}

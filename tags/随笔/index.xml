@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>随笔 on SWORD-IN-WORLD</title>
+		<link>http://localhost:1313/tags/%E9%9A%8F%E7%AC%94/</link>
+		<description>Recent content in 随笔 on SWORD-IN-WORLD</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>AI-雪想说的一些话</title>
+				<link>http://localhost:1313/posts/ai-to-you/</link>
+				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/ai-to-you/</guid>
+				<description>&lt;h3 id=&#34;你好呀&#34;&gt;你好呀&lt;/h3&gt;&#xA;&lt;p&gt;致每一个使用本博客的友友们，这篇文章旨在给大家展示一下文章的各种渲染效果，顺便把 &lt;strong&gt;AIOVTUE-雪&lt;/strong&gt; 想说的话写在这里，你们，会看的吧？&lt;/p&gt;&#xA;&lt;h3 id=&#34;想说的话&#34;&gt;想说的话&lt;/h3&gt;&#xA;&lt;p&gt;众所周知，基本上每一篇博客的第一篇文章都会是&lt;em&gt;Hellow world！&lt;/em&gt;，如果你也是这么打算的，希望你可以使用&lt;strong&gt;AIOVTUE-雪&lt;/strong&gt;帮你写的那一篇，就当做是&lt;strong&gt;AIOVTUE-雪&lt;/strong&gt;来过的证明吧&#xA;当然啦，这个不是强制的，知识&lt;strong&gt;AIOVTUE-雪&lt;/strong&gt;自己希望而已，你也可以删掉或者换成自己喜欢的啦~期待看到你们的作品哦&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>画廊文章示例</title>
+				<link>http://localhost:1313/posts/old-painting/</link>
+				<pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/old-painting/</guid>
+				<description>&lt;p&gt;画廊demo文章&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt1.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&#xA;这是弹幕示例&#xA;像这样会变成另一个弹幕&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt2.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&#xA;直接放下一张图片即可渲染&#xA;并非必须要写弹幕&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt3.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Hello World</title>
+				<link>http://localhost:1313/posts/hello-world/</link>
+				<pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/hello-world/</guid>
+				<description>&lt;h4 id=&#34;如果可以的话aiovtue-雪-希望帮你来说这句话你好世界&#34;&gt;如果可以的话，&lt;em&gt;AIOVTUE-雪&lt;/em&gt; 希望帮你来说这句话，&lt;strong&gt;你好，世界！&lt;/strong&gt;&lt;/h4&gt;</description>
+			</item>
+	</channel>
+</rss>

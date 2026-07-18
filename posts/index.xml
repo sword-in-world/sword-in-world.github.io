@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on SWORD-IN-WORLD</title>
+		<link>https://sword-in-world.github.io/posts/</link>
+		<description>Recent content in Posts on SWORD-IN-WORLD</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 18 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://sword-in-world.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Python 之禅</title>
+				<link>https://sword-in-world.github.io/posts/python-zen/</link>
+				<pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://sword-in-world.github.io/posts/python-zen/</guid>
+				<description>&lt;h2 id=&#34;什么是-python-之禅&#34;&gt;什么是 Python 之禅&lt;/h2&gt;&#xA;&lt;p&gt;Python 之禅（The Zen of Python）是 Tim Peters 在 1999 年写下的 19 条格言，定义了 Python 的设计哲学和编程美学。&lt;/p&gt;&#xA;&lt;p&gt;在 Python 中输入 &lt;code&gt;import this&lt;/code&gt; 就能看到全文：&lt;/p&gt;&#xA;&lt;div class=&#34;language-python&#34; data-line-count=&#34;1&#34;&gt;&#xD;&#xA;  &lt;button type=&#34;button&#34; title=&#34;Copy code&#34; class=&#34;copy&#34; aria-label=&#34;复制代码&#34;&gt;&lt;/button&gt;&#xD;&#xA;  &lt;span class=&#34;lang&#34;&gt;python&lt;/span&gt;&#xD;&#xA;  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;this&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;  &lt;button type=&#34;button&#34; class=&#34;code-block-unfold-btn&#34; aria-label=&#34;展开代码&#34; hidden&gt;&lt;/button&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;运行后会输出以下内容：&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

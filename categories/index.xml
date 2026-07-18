@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>分类 on SWORD-IN-WORLD</title>
+		<link>https://sword-in-world.github.io/categories/</link>
+		<description>Recent content in 分类 on SWORD-IN-WORLD</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 18 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://sword-in-world.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Python</title>
+				<link>https://sword-in-world.github.io/categories/python/</link>
+				<pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://sword-in-world.github.io/categories/python/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>教程</title>
+				<link>https://sword-in-world.github.io/categories/%E6%95%99%E7%A8%8B/</link>
+				<pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+				<guid>https://sword-in-world.github.io/categories/%E6%95%99%E7%A8%8B/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

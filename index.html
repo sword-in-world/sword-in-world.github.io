@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="zh" class="is-home has-home-layout"data-search-threshold="0.35">
+<head>
+	<meta name="generator" content="Hugo 0.163.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8"><link rel="icon" href="/hero/avatar.png" type="image/png"><script>
+;(function () {
+  var shouldSkip = false
+  try {
+    if (sessionStorage.getItem('sakura-skip-loader')) {
+      shouldSkip = true
+      sessionStorage.removeItem('sakura-skip-loader')
+    }
+  } catch (_) {}
+
+  if (!shouldSkip) {
+    var isTouchMobile = window.matchMedia('(hover: none) and (pointer: coarse)').matches
+      || window.matchMedia('(max-width: 768px)').matches
+    if (isTouchMobile) {
+      var nav = performance.getEntriesByType('navigation')[0]
+      if (nav && nav.type !== 'reload') shouldSkip = true
+    }
+  }
+
+  if (shouldSkip) {
+    document.documentElement.classList.add('sakura-skip-loader')
+  }
+})()
+</script>
+<script>
+;(function () {
+  var isTouchMobile = window.matchMedia('(hover: none) and (pointer: coarse)').matches
+    || window.matchMedia('(max-width: 768px)').matches
+  if (!isTouchMobile) return
+
+  document.addEventListener('click', function (e) {
+    var el = e.target
+    while (el && el !== document.documentElement) {
+      if (el.tagName === 'A' && el.href) {
+        try {
+          var url = new URL(el.href, location.href)
+          if (url.origin === location.origin && el.target !== '_blank') {
+            sessionStorage.setItem('sakura-skip-loader', '1')
+          }
+        } catch (_) {}
+        break
+      }
+      el = el.parentElement
+    }
+  }, true)
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter') return
+    var el = e.target
+    if (!el || el.id !== 'search-modal-input') return
+    try {
+      sessionStorage.setItem('sakura-skip-loader', '1')
+    } catch (_) {}
+  }, true)
+})()
+</script>
+<script>
+;(function () {
+  try {
+    var stored = localStorage.getItem('sakura-theme')
+    if (stored === 'dark') {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  } catch (_) {}
+})()
+</script>
+<script>
+;(function () {
+  var path = location.pathname.replace(/\/$/, '') || '/'
+  var isHome = path === '/' || /^\/page\/\d+$/.test(path)
+  if (!isHome || location.hash === '#home-post-list') return
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual'
+  window.scrollTo(0, 0)
+})()
+</script>
+<style id="sakura-fouc">body.sakura-loading{overflow:hidden;overscroll-behavior:none}body.sakura-loading .sakura-navbar,body.sakura-loading #content,body.sakura-loading .sakura-footer,body.sakura-loading #search-modal{opacity:0!important;visibility:hidden!important}html.dark,html.dark body{background:#1a1a1a!important}html.dark.is-home,html.dark.is-home body{background:#1a1a1a!important}html.sakura-skip-loader body.sakura-loading{overflow:auto;overscroll-behavior:auto}html.sakura-skip-loader body.sakura-loading .sakura-navbar,html.sakura-skip-loader body.sakura-loading #content,html.sakura-skip-loader body.sakura-loading .sakura-footer,html.sakura-skip-loader body.sakura-loading #search-modal{opacity:1!important;visibility:visible!important}html.sakura-skip-loader #va-fouc-loader{display:none!important}</style>
+<style id="va-fouc-loader-style">
+#va-fouc-loader{position:fixed;top:0;left:0;margin:0;padding:0;border:0;width:100%;height:100%;z-index:2147483646;background:#fff;color-scheme:light;transition:opacity .28s ease,visibility .28s ease}
+html.dark #va-fouc-loader{background:#1a1a1a;color-scheme:dark}
+html.dark.is-home #va-fouc-loader{background:#1a1a1a}
+#va-fouc-loader.is-hidden{opacity:0;visibility:hidden;pointer-events:none}
+.va-fouc-loader__panel{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;width:max-content;max-width:calc(100vw - 32px);text-align:center}
+#va-fouc-loader__spinner{position:relative;width:108px;height:108px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+#va-fouc-loader__ring{position:absolute;inset:0;border:4px solid color-mix(in srgb,#9191df 22%,transparent);border-top-color:#9191df;border-radius:50%;animation:va-fouc-spin .75s linear infinite}
+#va-fouc-loader__avatar{position:relative;z-index:1;display:block;width:92px;height:92px;border-radius:50%;object-fit:cover;background:color-mix(in srgb,#9191df 12%,transparent)}
+#va-fouc-loader__dots{display:flex;gap:6px;align-items:center;justify-content:center;height:8px}
+#va-fouc-loader__dots span{width:6px;height:6px;border-radius:50%;background:#9191df;opacity:.35;animation:va-fouc-bounce 1.1s ease-in-out infinite}
+#va-fouc-loader__dots span:nth-child(2){animation-delay:.15s}
+#va-fouc-loader__dots span:nth-child(3){animation-delay:.3s}
+#va-fouc-loader__text{font-family:"LXGW WenKai Screen",STZhongsong,KaiTi,serif;font-size:14px;letter-spacing:.08em;color:color-mix(in srgb,#9191df 88%,#666);user-select:none}
+html.dark #va-fouc-loader__text{color:color-mix(in srgb,#9191df 88%,#eee)}
+@keyframes va-fouc-spin{to{transform:rotate(360deg)}}
+@keyframes va-fouc-bounce{0%,80%,100%{transform:translateY(0);opacity:.35}40%{transform:translateY(-5px);opacity:1}}
+</style>
+<script>
+;(function () {
+  var HIDE_CLS = 'is-hidden'
+  var LOADER_ID = 'va-fouc-loader'
+  var FOUC_STYLE_ID = 'sakura-fouc'
+  var LOADER_STYLE_ID = 'va-fouc-loader-style'
+  var BODY_LOADING_CLS = 'sakura-loading'
+  var hidden = false
+  var pollTimer
+  var startTime = Date.now()
+  var MIN_SHOW =  480 
+  var MAX_DURATION =  6000 
+
+  if (document.documentElement.classList.contains('sakura-skip-loader')) {
+    document.addEventListener('DOMContentLoaded', function () {
+      document.body.classList.remove(BODY_LOADING_CLS)
+      var foucStyle = document.getElementById(FOUC_STYLE_ID)
+      if (foucStyle) foucStyle.remove()
+      var loader = document.getElementById(LOADER_ID)
+      if (loader) loader.remove()
+      var style = document.getElementById(LOADER_STYLE_ID)
+      if (style) style.remove()
+      try { window.dispatchEvent(new Event('sakura:page-content-visible')) } catch (_) {}
+    })
+    return
+  }
+
+  function stylesReady() {
+    var links = document.querySelectorAll('link[rel="stylesheet"]')
+    for (var i = 0; i < links.length; i++) {
+      var href = links[i].href || ''
+      if (/waline|unpkg\.com\/@waline/i.test(href)) continue
+      if (!links[i].sheet) return false
+    }
+    return true
+  }
+
+  function pageReady() {
+    return document.readyState !== 'loading' && stylesReady()
+  }
+
+  function resetHomeScroll() {
+    var path = location.pathname.replace(/\/$/, '') || '/'
+    if (path !== '/' || location.hash) return
+    window.scrollTo(0, 0)
+    requestAnimationFrame(function () {
+      window.scrollTo(0, 0)
+    })
+  }
+
+  function revealPage() {
+    document.body.classList.remove(BODY_LOADING_CLS)
+    var foucStyle = document.getElementById(FOUC_STYLE_ID)
+    if (foucStyle) foucStyle.remove()
+    resetHomeScroll()
+  }
+
+  function hideLoader() {
+    if (hidden) return
+    hidden = true
+    if (pollTimer) clearInterval(pollTimer)
+    revealPage()
+    try { window.dispatchEvent(new Event('sakura:page-content-visible')) } catch (_) {}
+    var loader = document.getElementById(LOADER_ID)
+    if (!loader) return
+    loader.classList.add(HIDE_CLS)
+    setTimeout(function () {
+      loader.remove()
+      var style = document.getElementById(LOADER_STYLE_ID)
+      if (style) style.remove()
+    }, 300)
+  }
+
+  function canHide() {
+    var elapsed = Date.now() - startTime
+    if (elapsed < MIN_SHOW) return false
+    if (pageReady()) return true
+    return elapsed >= MIN_SHOW + 1800
+  }
+
+  function tryHide() {
+    if (canHide()) hideLoader()
+  }
+
+  function startPolling() {
+    if (hidden || pollTimer) return
+    var tries = 0
+    pollTimer = setInterval(function () {
+      tries++
+      tryHide()
+      if (hidden || tries >= 240) clearInterval(pollTimer)
+    }, 50)
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startPolling)
+  } else {
+    startPolling()
+  }
+
+  window.addEventListener('load', tryHide)
+  setTimeout(function () {
+    if (!hidden) hideLoader()
+  }, MAX_DURATION)
+})()
+</script>
+<noscript><style>body.sakura-loading .sakura-navbar,body.sakura-loading #content,body.sakura-loading .sakura-footer{opacity:1!important;visibility:visible!important}#va-fouc-loader{display:none!important}</style></noscript>
+<style>body{transition:opacity .15s ease}</style><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SWORD-IN-WORLD</title><meta name="description" content="剑指世界"><meta name="sakura-pjax" content="1" data-fade="200" data-mount-delay="120" data-loader="1"><meta name="sakura-mouse-style" content="1" data-path="/mouse/tuantuanma/"><script type="application/json" id="sakura-site-effects-config">{"maxDuration":10,"mobile":false,"randomTypes":["sakura","rain","snow","firefly","butterfly"],"randomize":true,"script":"/vendor/yzhanweather/yzhanweather.min.js","type":"firefly","zIndex":5}</script>
+<script>
+(function () {
+  var el = document.getElementById('sakura-site-effects-config')
+  if (!el?.textContent) return
+  try {
+    var raw = JSON.parse(el.textContent)
+    if (typeof raw === 'string') raw = JSON.parse(raw)
+    document.documentElement.dataset.sakuraEffectsMobile = raw.mobile ? '1' : '0'
+  } catch {}
+})()
+</script><link rel="canonical" href="http://localhost:1313/">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="http://localhost:1313/sitemap.xml">
+<link rel="alternate" type="application/rss+xml" title="SWORD-IN-WORLD" href="http://localhost:1313/index.xml"><meta name="sakura-comment-provider" content="waline"><link rel="stylesheet" href="https://unpkg.com/@waline/client@3.15.2/dist/waline.css">
+<meta name="sakura-waline-server" content="https://your-waline-url"><meta property="og:locale" content="zh-CN">
+<meta property="og:locale:alternate" content="en">
+<meta property="og:site_name" content="SWORD-IN-WORLD">
+<meta property="og:title" content="SWORD-IN-WORLD">
+<meta property="og:description" content="剑指世界">
+<meta property="og:image" content="http://localhost:1313/hero/hero-3.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:1313/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SWORD-IN-WORLD">
+<meta name="twitter:description" content="剑指世界">
+<meta name="twitter:image" content="http://localhost:1313/hero/hero-3.jpg"><style>:root{--va-c-primary:#9191df;--va-c-primary-rgb:145, 145, 223;--va-c-primary-light:rgb(164.7535211268, 164.7535211268, 228.7464788732);--va-c-primary-lighter:rgb(184.5070422535, 184.5070422535, 234.4929577465);--va-c-primary-dark:rgb(113.3943661972, 113.3943661972, 213.8056338028);--va-c-brand:var(--va-c-primary);--va-c-link:var(--va-c-primary-dark)}</style><style>:root{--sakura-hero-placeholder:#fafafa;--sakura-hero-placeholder-from:#f5f5f5;--sakura-hero-placeholder-to:#fff}html.dark{--sakura-hero-placeholder:#e8e8e8;--sakura-hero-placeholder-from:#ececec;--sakura-hero-placeholder-to:#e0e0e0}html.is-home,html.is-home body{background:var(--sakura-hero-placeholder)}</style>
+<link rel="stylesheet" href="/fonts/lxgw-wenkai-screen/style.css">
+
+<link rel="stylesheet" href="/css/main.min.a95678432e0b5932fe2902bdc138da0f0a3f6f8647ac8a717ddb889632d90234.css" integrity="sha256-qVZ4Qy4LWTL&#43;KQK9wTjaDwo/b4ZHrIpxfduIljLZAjQ=" crossorigin="anonymous"><link rel="stylesheet" data-sakura-page-style="signature" href="/signature/signature.css"><link rel="stylesheet" data-sakura-page-style="music" href="/css/music-player.min.3e6598c3ad7a944090ca8b4efe9177d2ff9700f5f4be418ff7c0e128e71d9876.css" integrity="sha256-PmWYw616lECQyotO/pF30v&#43;XAPX0vkGP98DhKOcdmHY=" crossorigin="anonymous"><link rel="stylesheet" data-sakura-page-style="site-effects" href="/css/site-effects.min.d27e33642d83a4e0b5b2fb60629bb9f005d2b3f6c4538de5778473541138b172.css" integrity="sha256-0n4zZC2DpOC1svtgYpu58AXSs/bEU43ld4RzVBE4sXI=" crossorigin="anonymous"><link rel="stylesheet" data-sakura-page-style="search-modal" href="/css/search.min.f6d2e23c837b66e290778f6aad8ad70973be82a5a399f02fda57f76ce304519d.css" integrity="sha256-9tLiPIN7ZuKQd49qrYrXCXO&#43;gqWjmfAv2lf3bOMEUZ0=" crossorigin="anonymous"><link rel="stylesheet" data-sakura-page-style="pjax" href="/css/pjax.min.8134f4d93ea55fdd638fec86afc18315b337cb71ff68939dbfcfc471207fa922.css" integrity="sha256-gTT02T6lX91jj&#43;yGr8GDFbM3y3H/aJOdv8/EcSB/qSI=" crossorigin="anonymous"><script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js" defer></script>
+</head>
+<body class="sakura-loading"><script>
+;(function () {
+  if (!document.documentElement.classList.contains('sakura-skip-loader')) return
+  document.body.classList.remove('sakura-loading')
+})()
+</script>
+<template id="va-fouc-loader-template">
+<div id="va-fouc-loader" aria-hidden="true">
+  <div class="va-fouc-loader__panel">
+    <div id="va-fouc-loader__spinner">
+      <div id="va-fouc-loader__ring"></div>
+      <img id="va-fouc-loader__avatar" src="/hero/avatar.png" alt="" decoding="async" onerror="this.remove()">
+    </div>
+    <div id="va-fouc-loader__dots"><span></span><span></span><span></span></div>
+    <div id="va-fouc-loader__text">SWORD-IN-WORLD</div>
+  </div>
+</div>
+</template>
+<script>
+;(function () {
+  if (document.documentElement.classList.contains('sakura-skip-loader')) {
+    var tpl = document.getElementById('va-fouc-loader-template')
+    if (tpl) tpl.remove()
+    return
+  }
+  var tpl = document.getElementById('va-fouc-loader-template')
+  if (!tpl || !tpl.content.firstElementChild) return
+  document.body.insertBefore(tpl.content.firstElementChild.cloneNode(true), document.body.firstChild)
+  tpl.remove()
+  if (window.visualViewport) {
+    var loader = document.getElementById('va-fouc-loader')
+    if (!loader) return
+    var sync = function () {
+      var vv = window.visualViewport
+      if (!vv) return
+      loader.style.top = vv.offsetTop + 'px'
+      loader.style.left = vv.offsetLeft + 'px'
+      loader.style.width = vv.width + 'px'
+      loader.style.height = vv.height + 'px'
+    }
+    sync()
+    window.visualViewport.addEventListener('resize', sync)
+    window.visualViewport.addEventListener('scroll', sync)
+  }
+})()
+</script><header
+  class="sakura-navbar"
+  id="navbar"
+  data-mobile-collapse="1"
+  data-scroll-threshold="48"
+  data-scroll-delta="15"
+  data-reveal-mode="scrollUp"
+  data-mobile-collapse-home="1"
+>
+  <div class="navbar-content sakura-safe-padding" id="navbar-content">
+    <div class="sakura-navbar__brand-wrap">
+      <button type="button" class="mobile-btn sakura-navbar__menu-btn" id="sidebar-toggle" aria-label="mobile navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="sakura-navbar-brand">
+        <ruby class="navbar-title relative">
+          <a class="logo-link" href="/" title="SWORD-IN-WORLD-剑">
+            
+            <span>SWORD-IN-WORLD</span>
+            
+            <span class="sakura-hvr-rotate" id="navbar-brand-rotate">剑</span>
+            
+          </a>
+          <rt class="navbar-subtitle">剑指世界</rt>
+        </ruby>
+      </div>
+    </div>
+
+    <nav class="sakura-navbar-link" id="navbar-links" aria-label="主导航">
+      
+      <div class="sakura-dropdown sakura-navbar-link-item">
+        <a class="sakura-nav-link" href="/" data-nav="/">
+          <iconify-icon icon="ant-design:home-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-nav-link-text">首页</span>
+        </a>
+        
+      </div>
+      
+      <div class="sakura-dropdown sakura-navbar-link-item" aria-haspopup="true" aria-expanded="false">
+        <a class="sakura-nav-link" href="/categories/" data-nav="/categories/" data-nav-group="posts">
+          <iconify-icon icon="ant-design:read-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-nav-link-text">文章</span>
+        </a>
+        
+        <div class="sakura-dropdown-menu">
+          <div class="sakura-dropdown-list">
+            
+            <a class="sakura-nav-link" href="/categories/" data-nav="/categories/">
+              <iconify-icon icon="ant-design:appstore-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">分类</span>
+            </a>
+            
+            <a class="sakura-nav-link" href="/archives/" data-nav="/archives/">
+              <iconify-icon icon="ant-design:container-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">归档</span>
+            </a>
+            
+            <a class="sakura-nav-link" href="/tags/" data-nav="/tags/">
+              <iconify-icon icon="ant-design:tags-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">标签</span>
+            </a>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="sakura-dropdown sakura-navbar-link-item" aria-haspopup="true" aria-expanded="false">
+        <a class="sakura-nav-link" href="/moments/" data-nav="/moments/" data-nav-group="personal">
+          <iconify-icon icon="ant-design:user-outlined" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-nav-link-text">个人</span>
+        </a>
+        
+        <div class="sakura-dropdown-menu">
+          <div class="sakura-dropdown-list">
+            
+            <a class="sakura-nav-link" href="/gallery/" data-nav="/gallery/">
+              <iconify-icon icon="ant-design:picture-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">相册</span>
+            </a>
+            
+            <a class="sakura-nav-link" href="/moments/" data-nav="/moments/">
+              <iconify-icon icon="ant-design:compass-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">动态</span>
+            </a>
+            
+            <a class="sakura-nav-link" href="/bangumi/" data-nav="/bangumi/">
+              <iconify-icon icon="mdi:television-play" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">追番</span>
+            </a>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="sakura-dropdown sakura-navbar-link-item">
+        <a class="sakura-nav-link" href="/comment/" data-nav="/comment/">
+          <iconify-icon icon="ant-design:message-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-nav-link-text">留言</span>
+        </a>
+        
+      </div>
+      
+      <div class="sakura-dropdown sakura-navbar-link-item">
+        <a class="sakura-nav-link" href="/links/" data-nav="/links/">
+          <iconify-icon icon="ant-design:global-outlined" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-nav-link-text">友链</span>
+        </a>
+        
+      </div>
+      
+      <div class="sakura-dropdown sakura-navbar-link-item">
+        <a class="sakura-nav-link" href="/about/" data-nav="/about/">
+          <iconify-icon icon="ant-design:idcard-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-nav-link-text">关于</span>
+        </a>
+        
+      </div>
+      
+    </nav>
+
+    <div class="sakura-navbar-tools">
+      <button type="button" class="sakura-icon-btn sakura-navbar-tool" id="theme-toggle" aria-label="切换主题">
+        <iconify-icon icon="ri:moon-line"></iconify-icon>
+      </button>
+      <button type="button" class="sakura-icon-btn sakura-navbar-tool sakura-search-btn" id="search-open" aria-label="搜索" aria-expanded="false">
+        <span class="search-toggle-icon" aria-hidden="true">
+          <iconify-icon class="search-toggle-icon__search" icon="ri:search-line"></iconify-icon>
+          <iconify-icon class="search-toggle-icon__close" icon="ri:close-line"></iconify-icon>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+<aside class="sakura-sidebar left" id="sidebar" aria-hidden="true">
+  <div class="site-info">
+    <a href="/about/" class="site-author-avatar">
+      <img class="rounded-full" src="/hero/avatar.png" alt="avatar">
+      <span class="site-author-status" title="发呆ing...">🌸</span>
+    </a>
+    <div class="site-author-name">
+      <a href="/about/">作者名称</a>
+    </div>
+    <span class="site-name">SWORD-IN-WORLD</span>
+    <h4 class="site-subtitle">剑</h4>
+    <div class="site-description">剑指世界</div>
+  </div>
+
+  <div class="links-of-author">
+    
+    <a
+      class="sakura-icon-btn links-of-author-item"
+      href="/index.xml"
+      title="RSS"
+      target="_blank"
+      rel="noopener"
+      style="color: orange"
+    >
+      <iconify-icon icon="ri:rss-line" class="links-of-author-item__icon" aria-hidden="true"></iconify-icon>
+    </a>
+    
+    <a
+      class="sakura-icon-btn links-of-author-item"
+      href="https://github.com/AIOVTUE"
+      title="GitHub"
+      target="_blank"
+      rel="noopener"
+      style="color: #6e5494"
+    >
+      <iconify-icon icon="ri:github-line" class="links-of-author-item__icon" aria-hidden="true"></iconify-icon>
+    </a>
+    
+    <a
+      class="sakura-icon-btn links-of-author-item"
+      href="/hero/wxgzh.png"
+      title="微信公众号"
+      target="_blank"
+      rel="noopener"
+      style="color: #1AAD19"
+    >
+      <iconify-icon icon="ri:wechat-2-line" class="links-of-author-item__icon" aria-hidden="true"></iconify-icon>
+    </a>
+    
+    <a
+      class="sakura-icon-btn links-of-author-item"
+      href="mailto:x@yybb.us"
+      title="E-Mail"
+      target="_blank"
+      rel="noopener"
+      style="color: #8E71C1"
+    >
+      <iconify-icon icon="ri:mail-line" class="links-of-author-item__icon" aria-hidden="true"></iconify-icon>
+    </a>
+    
+    <a
+      class="sakura-icon-btn links-of-author-item"
+      href="https://www.travellings.cn/go.html"
+      title="Travelling"
+      target="_blank"
+      rel="noopener"
+      style="color: #8cb1b3"
+    >
+      <iconify-icon icon="ri:train-line" class="links-of-author-item__icon" aria-hidden="true"></iconify-icon>
+    </a>
+    
+  </div>
+
+  <nav class="sakura-sidebar-link" aria-label="侧边栏导航">
+    <ul class="sakura-sidebar-link-items has-groups mx-auto">
+      
+      <li>
+        
+        <a class="sakura-nav-link sakura-sidebar-link-item" href="/" data-nav="/" title="首页">
+          <iconify-icon icon="ant-design:home-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-nav-link-text">首页</span>
+        </a>
+        
+      </li>
+      
+      <li>
+        
+        <button
+          type="button"
+          class="sakura-sidebar-link-item sidebar-nav-group__toggle"
+          data-nav="/categories/"
+          aria-expanded="false"
+          data-nav-group="posts"
+        >
+          <iconify-icon icon="ant-design:read-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sidebar-nav-group__label">文章</span>
+          <iconify-icon icon="ant-design:down-outlined" class="sidebar-nav-group__chevron" aria-hidden="true"></iconify-icon>
+        </button>
+        <ul class="sakura-sidebar-link-sub-items" hidden>
+          
+          <li>
+            <a class="sakura-nav-link sakura-sidebar-link-item" href="/categories/" data-nav="/categories/" title="分类">
+              <iconify-icon icon="ant-design:appstore-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">分类</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="sakura-nav-link sakura-sidebar-link-item" href="/archives/" data-nav="/archives/" title="归档">
+              <iconify-icon icon="ant-design:container-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">归档</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="sakura-nav-link sakura-sidebar-link-item" href="/tags/" data-nav="/tags/" title="标签">
+              <iconify-icon icon="ant-design:tags-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">标签</span>
+            </a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        
+        <button
+          type="button"
+          class="sakura-sidebar-link-item sidebar-nav-group__toggle"
+          data-nav="/moments/"
+          aria-expanded="false"
+          data-nav-group="personal"
+        >
+          <iconify-icon icon="ant-design:user-outlined" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sidebar-nav-group__label">个人</span>
+          <iconify-icon icon="ant-design:down-outlined" class="sidebar-nav-group__chevron" aria-hidden="true"></iconify-icon>
+        </button>
+        <ul class="sakura-sidebar-link-sub-items" hidden>
+          
+          <li>
+            <a class="sakura-nav-link sakura-sidebar-link-item" href="/gallery/" data-nav="/gallery/" title="相册">
+              <iconify-icon icon="ant-design:picture-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">相册</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="sakura-nav-link sakura-sidebar-link-item" href="/moments/" data-nav="/moments/" title="动态">
+              <iconify-icon icon="ant-design:compass-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">动态</span>
+            </a>
+          </li>
+          
+          <li>
+            <a class="sakura-nav-link sakura-sidebar-link-item" href="/bangumi/" data-nav="/bangumi/" title="追番">
+              <iconify-icon icon="mdi:television-play" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+              <span class="sakura-nav-link-text">追番</span>
+            </a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        
+        <a class="sakura-nav-link sakura-sidebar-link-item" href="/comment/" data-nav="/comment/" title="留言">
+          <iconify-icon icon="ant-design:message-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-nav-link-text">留言</span>
+        </a>
+        
+      </li>
+      
+      <li>
+        
+        <a class="sakura-nav-link sakura-sidebar-link-item" href="/links/" data-nav="/links/" title="友链">
+          <iconify-icon icon="ant-design:global-outlined" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-nav-link-text">友链</span>
+        </a>
+        
+      </li>
+      
+      <li>
+        
+        <a class="sakura-nav-link sakura-sidebar-link-item" href="/about/" data-nav="/about/" title="关于">
+          <iconify-icon icon="ant-design:idcard-filled" class="sakura-nav-link-icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-nav-link-text">关于</span>
+        </a>
+        
+      </li>
+      
+    </ul>
+  </nav>
+</aside>
+<div class="sakura-sidebar__overlay va-overlay" id="sidebar-overlay"></div>
+
+<div id="content" class="site-content">
+
+
+
+
+
+
+
+
+
+
+<section class="sakura-home"><section class="sakura-hero" id="hero">
+  <div class="sakura-hero__media hero-style dot">
+    <div class="sakura-hero-background" id="hero-media" data-fixed-img="true">
+      <script type="application/json" id="hero-urls-data">"[\"/hero/sp1.mp4\",\"/hero/saber.png\"]"</script>
+      <div class="sakura-hero-background-stage" id="hero-media-stage"></div>
+      <div class="sakura-hero__overlay"></div>
+    </div>
+    <div class="sakura-hero__waves" aria-hidden="true" style="--sakura-wave-front-mask: url('/img/wave1.png'); --sakura-wave-foreground-mask: url('/img/wave2.png');">
+      <div class="sakura-hero__wave-front"></div>
+      <div class="sakura-hero__wave-foreground"></div>
+    </div>
+  </div>
+  <div class="sakura-hero__content info-overlay">
+    <div class="sakura-hero-info-overlay">
+      <h1 class="sakura-hero__title sakura-glitch-text sakura-fade-in-down" data-text="SWORD-IN-WORLD">SWORD-IN-WORLD</h1>
+      <div class="sakura-slit-in-horizontal sakura-info-card">
+        <div class="sakura-social-card">
+          <div class="sakura-hitokoto-quote">
+            <iconify-icon icon="fa6-solid:quote-left" class="sakura-hitokoto-quote-icon" aria-hidden="true"></iconify-icon>
+            <span class="sakura-hitokoto-text" id="hero-hitokoto" data-fallback="剑指世界" data-enable-hitokoto="true" data-typewriter="true" data-speed="80"></span>
+            <iconify-icon icon="fa6-solid:quote-right" class="sakura-hitokoto-quote-icon" aria-hidden="true"></iconify-icon>
+          </div>
+          <div class="sakura-hero-social-row">
+            <img class="sakura-icon sakura-hero-media-arrow is-prev" id="hero-media-prev" src="/img/hero-media-arrow.svg" alt="Previous media" width="22" height="22" role="button" tabindex="0">
+            
+            <a href="/index.xml" aria-label="icon" target="_blank" rel="noopener" title="RSS" style="--sakura-color-icon: orange; color: orange;">
+              <iconify-icon icon="ri:rss-line" class="sakura-icon"></iconify-icon>
+            </a>
+            
+            <a href="https://github.com/AIOVTUE" aria-label="icon" target="_blank" rel="noopener" title="GitHub" style="--sakura-color-icon: #6e5494; color: #6e5494;">
+              <iconify-icon icon="ri:github-line" class="sakura-icon"></iconify-icon>
+            </a>
+            
+            <a href="/hero/wxgzh.png" aria-label="icon" target="_blank" rel="noopener" title="微信公众号" style="--sakura-color-icon: #1AAD19; color: #1AAD19;">
+              <iconify-icon icon="ri:wechat-2-line" class="sakura-icon"></iconify-icon>
+            </a>
+            
+            <a href="mailto:x@yybb.us" aria-label="icon" target="_blank" rel="noopener" title="E-Mail" style="--sakura-color-icon: #8E71C1; color: #8E71C1;">
+              <iconify-icon icon="ri:mail-line" class="sakura-icon"></iconify-icon>
+            </a>
+            
+            <a href="https://www.travellings.cn/go.html" aria-label="icon" target="_blank" rel="noopener" title="Travelling" style="--sakura-color-icon: #8cb1b3; color: #8cb1b3;">
+              <iconify-icon icon="ri:train-line" class="sakura-icon"></iconify-icon>
+            </a>
+            
+            <img class="sakura-icon sakura-hero-media-arrow" id="hero-media-next" src="/img/hero-media-arrow.svg" alt="Next media" width="22" height="22" role="button" tabindex="0">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sakura-hero__scroll">
+    <button type="button" class="sakura-scroll-down" id="hero-scroll-down" aria-label="向下滚动">
+      <iconify-icon icon="fa6-solid:angle-down" class="sakura-scroll-down-icon sakura-loop-float"></iconify-icon>
+    </button>
+  </div><button type="button" class="sakura-hero__player" id="hero-player-btn" aria-label="播放视频" data-player-url="/hero/player.mp4">
+    <img class="sakura-player sakura-loop-fly" id="hero-player-icon" src="/img/hero-player-play.png" data-play-src="/img/hero-player-play.png" data-pause-src="/img/hero-player-pause.png" alt="" width="32" height="32" decoding="async">
+  </button></section>
+<div class="sakura-home-layout is-layout-cards is-mobile-cards-list" id="home-posts" data-home-layout="cards" data-mobile-cards-layout="list" data-mobile-cards-paging="loadMore">
+    
+    <div class="home-layout-notice" id="home-layout-notice"><section class="notice-board-wrap" data-interval="5000">
+  <aside class="notice-board-wrap__notice">
+    <h3 class="notice-board__title">公告栏</h3>
+    
+    <div class="notice-board__section">
+      <p class="notice-board__label">--- 主域名 ---</p>
+      <ul>
+        
+        <li><a href="https://daily.yybb.us" target="_blank" rel="noopener">daily.yybb.us</a></li>
+        
+        <li><a href="https://day.yybb.us" target="_blank" rel="noopener">day.yybb.us</a></li>
+        
+      </ul>
+    </div>
+    
+    <div class="notice-board__section">
+      <p class="notice-board__label">--- 备用域名 ---</p>
+      <ul>
+        
+        <li><a href="https://daily.20030327.xyz" target="_blank" rel="noopener">daily.20030327.xyz</a></li>
+        
+        <li><a href="https://daily.yybb.dpdns.org" target="_blank" rel="noopener">daily.yybb.dpdns.org</a></li>
+        
+        <li><a href="https://daily.aiovtue.dpdns.org" target="_blank" rel="noopener">daily.aiovtue.dpdns.org</a></li>
+        
+      </ul>
+    </div>
+    
+  </aside>
+  <div class="notice-board-wrap__article" id="notice-article">
+    <a class="notice-board-wrap__article-link" href="/posts/python-zen/" aria-label="查看文章：Python 之禅"></a>
+    <div class="notice-board-wrap__cover-col">
+      <div class="notice-board-wrap__dots" role="tablist" aria-label="文章切换">
+        <div class="notice-board-wrap__dot-center" aria-hidden="true"></div>
+        <div class="notice-board-wrap__dots-track">
+          
+          <button type="button" class="notice-board-wrap__dot" data-offset="-2" role="tab" aria-label="切换文章"></button>
+          
+          <button type="button" class="notice-board-wrap__dot" data-offset="-1" role="tab" aria-label="切换文章"></button>
+          
+          <button type="button" class="notice-board-wrap__dot is-active" data-offset="0" role="tab" aria-label="切换文章"></button>
+          
+          <button type="button" class="notice-board-wrap__dot" data-offset="1" role="tab" aria-label="切换文章"></button>
+          
+          <button type="button" class="notice-board-wrap__dot" data-offset="2" role="tab" aria-label="切换文章"></button>
+          
+        </div>
+      </div>
+      <div class="notice-board-wrap__cover-frame">
+        <div class="notice-board-wrap__cover"><img
+    class="sakura-lazy-img"
+    src="/hero/hero-3.jpg"
+    alt="Python 之禅"
+    loading="eager"
+    decoding="async"
+  ></div>
+      </div>
+    </div>
+    <div class="notice-board-wrap__meta-col">
+      <div class="notice-board-wrap__meta">
+        <time class="notice-board-wrap__date" datetime="2026-07-18">2026-07-18</time>
+        <h2 class="notice-board-wrap__post-heading">Python 之禅</h2>
+        
+        
+        
+        <p class="notice-board-wrap__meta-line">
+          <span class="notice-board-wrap__meta-item">Python</span>
+          <span class="notice-board-wrap__meta-sep">·</span>
+          <span class="notice-board-wrap__meta-item">Python · 编程哲学 · 学习笔记</span>
+        </p>
+        
+        <div class="notice-board-wrap__excerpt-slot">
+          <p class="notice-board-wrap__excerpt">The Zen of Python — 写出优雅 Python 代码的 19 条法则</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="notice-posts-data">"[{\"categories\":[\"Python\"],\"cover\":\"/hero/hero-3.jpg\",\"date\":\"2026-07-18\",\"excerpt\":\"The Zen of Python — 写出优雅 Python 代码的 19 条法则\",\"tags\":[\"Python\",\"编程哲学\",\"学习笔记\"],\"title\":\"Python 之禅\",\"url\":\"/posts/python-zen/\"}]"</script></div>
+    
+    <div class="sakura-post-list" id="home-post-list">
+      
+      
+      <div class="post-list-container post-list-container--cards post-list-container--mobile-list" id="home-cards-list">
+        
+
+
+
+
+
+
+<article class="sakura-post-card left"><a class="sakura-post-card__cover aspect-video" href="/posts/python-zen/"><img
+    class="sakura-lazy-img"
+    src="/hero/hero-3.jpg"
+    alt="Python 之禅"
+    loading="lazy"
+    decoding="async"
+  ></a>
+  <div class="sakura-post-card__content has-cover">
+    <div class="sakura-post-card-info">
+      <div class="sakura-post-date post-date">
+        <span class="sakura-post-date__inner" title="编辑于2026-07-18">
+          <iconify-icon icon="mdi:clock-outline" class="sakura-icon sakura-post-date__icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-post-date__label">编辑于</span>
+          <time datetime="2026-07-18" data-date-only="true" itemprop="dateModified">2026-07-18</time>
+        </span>
+      </div>
+      <h2 class="sakura-post-title sakura-post-card__title">
+        <a href="/posts/python-zen/" aria-label="阅读全文：Python 之禅">Python 之禅</a>
+      </h2>
+      <div class="sakura-post-meta">
+        
+        <div class="sakura-post-categories">
+          
+            
+            <a class="sakura-post-categories__link" href="/categories/?category=Python">
+              
+              <iconify-icon icon="mdi:folder-open-outline" class="sakura-icon sakura-post-categories__icon" aria-hidden="true"></iconify-icon>
+              
+              <span>Python</span>
+            </a>
+            
+          
+        </div>
+        
+        
+        <div class="sakura-post-tags">
+          
+          <a class="sakura-post-tags__link" href="/tags/?tag=Python">
+            
+            <iconify-icon icon="mdi:tag-multiple" class="sakura-icon sakura-post-tags__icon" aria-hidden="true"></iconify-icon>
+            
+            <span>Python</span>
+          </a>
+          
+          <a class="sakura-post-tags__link" href="/tags/?tag=%E7%BC%96%E7%A8%8B%E5%93%B2%E5%AD%A6">
+            
+            <span class="sakura-post-tags__sep">·</span>
+            
+            <span>编程哲学</span>
+          </a>
+          
+          <a class="sakura-post-tags__link" href="/tags/?tag=%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0">
+            
+            <span class="sakura-post-tags__sep">·</span>
+            
+            <span>学习笔记</span>
+          </a>
+          
+        </div>
+        
+      </div>
+      <div class="sakura-post-excerpt sakura-post-card__excerpt">The Zen of Python — 写出优雅 Python 代码的 19 条法则</div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+<article class="sakura-post-card right"><a class="sakura-post-card__cover aspect-video" href="/excalidraw/demo/"><img
+    class="sakura-lazy-img"
+    src="/hero/tt1.png"
+    alt="画板示例文章"
+    loading="lazy"
+    decoding="async"
+  ></a>
+  <div class="sakura-post-card__content has-cover">
+    <div class="sakura-post-card-info">
+      <div class="sakura-post-date post-date">
+        <span class="sakura-post-date__inner" title="编辑于2024-05-02">
+          <iconify-icon icon="mdi:clock-outline" class="sakura-icon sakura-post-date__icon" aria-hidden="true"></iconify-icon>
+          <span class="sakura-post-date__label">编辑于</span>
+          <time datetime="2024-05-02" data-date-only="true" itemprop="dateModified">2024-05-02</time>
+        </span>
+      </div>
+      <h2 class="sakura-post-title sakura-post-card__title">
+        <a href="/excalidraw/demo/" aria-label="阅读全文：画板示例文章">画板示例文章</a>
+      </h2>
+      <div class="sakura-post-meta">
+        
+        <div class="sakura-post-categories">
+          
+            
+            <a class="sakura-post-categories__link" href="/categories/?category=%E6%95%99%E7%A8%8B">
+              
+              <iconify-icon icon="mdi:folder-open-outline" class="sakura-icon sakura-post-categories__icon" aria-hidden="true"></iconify-icon>
+              
+              <span>教程</span>
+            </a>
+            
+          
+        </div>
+        
+        
+        <div class="sakura-post-tags">
+          
+          <a class="sakura-post-tags__link" href="/tags/?tag=excalidraw">
+            
+            <iconify-icon icon="mdi:tag-multiple" class="sakura-icon sakura-post-tags__icon" aria-hidden="true"></iconify-icon>
+            
+            <span>excalidraw</span>
+          </a>
+          
+          <a class="sakura-post-tags__link" href="/tags/?tag=%E7%A4%BA%E4%BE%8B">
+            
+            <span class="sakura-post-tags__sep">·</span>
+            
+            <span>示例</span>
+          </a>
+          
+        </div>
+        
+      </div>
+      <div class="sakura-post-excerpt sakura-post-card__excerpt">Excalidraw 文章类型示例，具体位置在content\excalidraw\demo文件夹内部</div>
+    </div>
+  </div>
+</article>
+
+      </div>
+
+
+      
+      
+      
+      
+    </div>
+  </div>
+</section>
+
+  </div><footer class="sakura-footer"><div class="sakura-footer__inner">
+
+  
+
+  <div class="sakura-footer__icp"><a href="https://icp.gov.moe/?keyword=20260258" target="_blank" rel="noopener">萌ICP备20260258号</a></div>
+
+  
+
+  <div class="sakura-copyright">
+
+    <span>
+
+      Copyright &copy;
+
+      <span itemprop="copyrightYear">
+
+        2024 - 2026
+
+      </span>
+
+    </span>
+
+    <span>by</span>
+
+    <span itemprop="copyrightHolder"><span class="sakura-copyright-author">作者名称</span></span>
+
+  </div>
+
+  
+
+  <p class="sakura-footer-runtime" id="site-runtime" data-since="2024-01-01">
+
+    本站已经流畅运行
+
+    <span class="sakura-footer-runtime__num" data-unit="days">0</span>天
+
+    <span class="sakura-footer-runtime__num" data-unit="hours">0</span>小时
+
+    <span class="sakura-footer-runtime__num" data-unit="minutes">0</span>分钟
+
+    <span class="sakura-footer-runtime__num" data-unit="seconds">0</span>秒
+
+  </p>
+
+  
+
+  <p class="sakura-footer-powered">
+    Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" class="sakura-footer-powered__link">hugo</a> & theme <a href="https://github.com/AIOVTUE/hugo-theme-aiovtue" target="_blank" class="sakura-footer-powered__link">aiovtue</a>
+  </p></div>
+
+</footer>
+
+<div id="sakura-pjax-loader" class="is-hidden" hidden role="status" aria-hidden="true" aria-live="polite" aria-label="页面加载中" style="--sakura-pjax-ecg-duration: 1350ms">
+  <div class="sakura-pjax-loader__panel">
+    <div class="sakura-pjax-loader__ecg-viewport">
+      <svg class="sakura-pjax-loader__ecg" viewBox="0 0 80 56" preserveAspectRatio="xMidYMid meet" focusable="false" aria-hidden="true">
+        <defs>
+          <clipPath id="sakura-pjax-ecg-clip">
+            <rect x="0" y="0" width="80" height="56" />
+          </clipPath>
+          <linearGradient id="sakura-pjax-ecg-fade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="80" y2="0">
+            <stop offset="0%" stop-color="#fff" stop-opacity="0" />
+            <stop offset="20%" stop-color="#fff" stop-opacity="0.3" />
+            <stop offset="45%" stop-color="#fff" stop-opacity="1" />
+            <stop offset="100%" stop-color="#fff" stop-opacity="1" />
+          </linearGradient>
+          <mask id="sakura-pjax-ecg-mask">
+            <rect x="0" y="0" width="80" height="56" fill="url(#sakura-pjax-ecg-fade)" />
+          </mask><path id="sakura-pjax-ecg-beat" pathLength="80" d="M0,28 H30 L31,24 L33,28 H36 L37,33 L38,5 L42,45 L45,28 H47 L48,24 L50,28 H80" />
+        </defs>
+        <g clip-path="url(#sakura-pjax-ecg-clip)">
+          <g class="sakura-pjax-loader__ecg-grid" aria-hidden="true">
+            <line x1="0" y1="12" x2="80" y2="12" />
+            <line x1="0" y1="28" x2="80" y2="28" />
+            <line x1="0" y1="44" x2="80" y2="44" />
+          </g>
+          <g class="sakura-pjax-loader__ecg-trace" mask="url(#sakura-pjax-ecg-mask)">
+            <use href="#sakura-pjax-ecg-beat" class="sakura-pjax-loader__ecg-glow" />
+            <use href="#sakura-pjax-ecg-beat" class="sakura-pjax-loader__ecg-line" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div><div class="mashiro-search" id="search-modal" hidden>
+  <div class="mashiro-search-container">
+    <div class="mashiro-search-input-wrap">
+      <iconify-icon icon="fa6-solid:magnifying-glass" class="mashiro-search-input-icon" aria-hidden="true"></iconify-icon>
+      <input id="search-modal-input" class="mashiro-search-input" type="search" placeholder="输入关键词后回车搜索..." autocomplete="off">
+    </div>
+  </div>
+</div>
+<div
+  class="sakura-music sakura-music--right"
+  id="sakura-music"
+  data-storage-key="sakura-music-state"
+  data-position="right"data-server="netease"
+  data-type="playlist"
+  data-id="2580064383"
+  data-theme="#9191df"
+>
+  <div class="sakura-music__panel" id="sakura-music-panel" aria-hidden="true">
+    <div class="sakura-music__panel-head">
+      <span class="sakura-music__panel-title">正在播放</span>
+      <button type="button" class="sakura-music__panel-close" id="sakura-music-close" aria-label="收起播放器">
+        <iconify-icon icon="ri:arrow-down-s-line" aria-hidden="true"></iconify-icon>
+      </button>
+    </div>
+    <div class="sakura-music__meting-host" id="sakura-music-meting-host">
+      <p class="sakura-music__loading" id="sakura-music-loading" hidden>播放器加载中…</p>
+      <p class="sakura-music__error" id="sakura-music-error" hidden>音乐播放器加载失败，请稍后重试</p>
+    </div>
+  </div>
+  <button
+    type="button"
+    class="sakura-music__toggle"
+    id="sakura-music-toggle"
+    aria-label="打开音乐播放器"
+    aria-expanded="false"
+    aria-controls="sakura-music-panel"
+  >
+    <span class="sakura-music__toggle-disc" aria-hidden="true">
+      <iconify-icon icon="ri:disc-line" width="28" height="28"></iconify-icon>
+    </span>
+  </button>
+  <script type="application/json" id="sakura-music-apis">["https://api.i-meto.com/meting/api?server=:server\u0026type=:type\u0026id=:id\u0026r=:r","https://api.injahow.cn/meting/?server=:server\u0026type=:type\u0026id=:id","https://meting.qjqq.cn/?server=:server\u0026type=:type\u0026id=:id"]</script>
+</div><script src="/signature/signature.js" defer></script>
+
+<script src="/js/main.min.b2e880eb739aa913c75dc191edd7d6aaf339ac7090582c249b87e8d42697c839.js" integrity="sha256-suiA63OaqRPHXcGR7dfWqvM5rHCQWCwkm4fo1CaXyDk=" crossorigin="anonymous" defer></script>
+</body>
+</html>

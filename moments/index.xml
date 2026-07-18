@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>动态 on SWORD-IN-WORLD</title>
+		<link>http://localhost:1313/moments/</link>
+		<description>Recent content in 动态 on SWORD-IN-WORLD</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/moments/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title></title>
+				<link></link>
+				<pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>&lt;p&gt;&lt;strong&gt;对&lt;em&gt;hugo-aiovtue&lt;/em&gt;主题进行版本大更新，优化和新增部分功能&lt;/strong&gt;&#xA;&lt;strong&gt;以下是本次更新内容&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;新增动态页面，双样式&lt;/li&gt;&#xA;&lt;li&gt;文章新增画板（excalidraw）样式&lt;/li&gt;&#xA;&lt;li&gt;文章新增画廊样式&lt;/li&gt;&#xA;&lt;li&gt;文章新增MATH支持&lt;/li&gt;&#xA;&lt;li&gt;文章新增视频格式支持&lt;/li&gt;&#xA;&lt;li&gt;文章新增AI总结&lt;/li&gt;&#xA;&lt;li&gt;所有页面头图视频支持&lt;/li&gt;&#xA;&lt;li&gt;新增番剧页面&lt;/li&gt;&#xA;&lt;li&gt;新增看板娘组件&lt;/li&gt;&#xA;&lt;li&gt;新增网页特效&lt;/li&gt;&#xA;&lt;li&gt;新增网页鼠标样式&lt;/li&gt;&#xA;&lt;li&gt;新增友链页样式&lt;/li&gt;&#xA;&lt;li&gt;新增主页文章列表样式&lt;/li&gt;&#xA;&lt;li&gt;新增左下角音乐播放器&lt;/li&gt;&#xA;&lt;li&gt;新增友链页朋友动态功能&lt;/li&gt;&#xA;&lt;li&gt;新增字体大小自定义功能&lt;/li&gt;&#xA;&lt;li&gt;新增移动端顶栏自动隐藏（手动开启）&lt;/li&gt;&#xA;&lt;li&gt;新增页脚出友链显示功能&lt;/li&gt;&#xA;&lt;li&gt;留言页增加弹幕功能&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link></link>
+				<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>&lt;p&gt;这是一个纯文字动态&lt;strong&gt;demo&lt;/strong&gt;&lt;br&gt;&#xA;支持部分&lt;em&gt;markdown&lt;/em&gt;语法&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link></link>
+				<pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>&lt;p&gt;以下是图片动态示例：&#xA;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt1.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&#xA;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt2.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&#xA;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt3.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&#xA;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/hero-2.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>SWORD-IN-WORLD</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on SWORD-IN-WORLD</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 18 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Python 之禅</title>
+				<link>http://localhost:1313/posts/python-zen/</link>
+				<pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/python-zen/</guid>
+				<description>&lt;h2 id=&#34;什么是-python-之禅&#34;&gt;什么是 Python 之禅&lt;/h2&gt;&#xA;&lt;p&gt;Python 之禅（The Zen of Python）是 Tim Peters 在 1999 年写下的 19 条格言，定义了 Python 的设计哲学和编程美学。&lt;/p&gt;&#xA;&lt;p&gt;在 Python 中输入 &lt;code&gt;import this&lt;/code&gt; 就能看到全文：&lt;/p&gt;&#xA;&lt;div class=&#34;language-python&#34; data-line-count=&#34;1&#34;&gt;&#xD;&#xA;  &lt;button type=&#34;button&#34; title=&#34;Copy code&#34; class=&#34;copy&#34; aria-label=&#34;复制代码&#34;&gt;&lt;/button&gt;&#xD;&#xA;  &lt;span class=&#34;lang&#34;&gt;python&lt;/span&gt;&#xD;&#xA;  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;this&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;  &lt;button type=&#34;button&#34; class=&#34;code-block-unfold-btn&#34; aria-label=&#34;展开代码&#34; hidden&gt;&lt;/button&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;运行后会输出以下内容：&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link></link>
+				<pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>&lt;p&gt;&lt;strong&gt;对&lt;em&gt;hugo-aiovtue&lt;/em&gt;主题进行版本大更新，优化和新增部分功能&lt;/strong&gt;&#xA;&lt;strong&gt;以下是本次更新内容&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;新增动态页面，双样式&lt;/li&gt;&#xA;&lt;li&gt;文章新增画板（excalidraw）样式&lt;/li&gt;&#xA;&lt;li&gt;文章新增画廊样式&lt;/li&gt;&#xA;&lt;li&gt;文章新增MATH支持&lt;/li&gt;&#xA;&lt;li&gt;文章新增视频格式支持&lt;/li&gt;&#xA;&lt;li&gt;文章新增AI总结&lt;/li&gt;&#xA;&lt;li&gt;所有页面头图视频支持&lt;/li&gt;&#xA;&lt;li&gt;新增番剧页面&lt;/li&gt;&#xA;&lt;li&gt;新增看板娘组件&lt;/li&gt;&#xA;&lt;li&gt;新增网页特效&lt;/li&gt;&#xA;&lt;li&gt;新增网页鼠标样式&lt;/li&gt;&#xA;&lt;li&gt;新增友链页样式&lt;/li&gt;&#xA;&lt;li&gt;新增主页文章列表样式&lt;/li&gt;&#xA;&lt;li&gt;新增左下角音乐播放器&lt;/li&gt;&#xA;&lt;li&gt;新增友链页朋友动态功能&lt;/li&gt;&#xA;&lt;li&gt;新增字体大小自定义功能&lt;/li&gt;&#xA;&lt;li&gt;新增移动端顶栏自动隐藏（手动开启）&lt;/li&gt;&#xA;&lt;li&gt;新增页脚出友链显示功能&lt;/li&gt;&#xA;&lt;li&gt;留言页增加弹幕功能&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link></link>
+				<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>&lt;p&gt;这是一个纯文字动态&lt;strong&gt;demo&lt;/strong&gt;&lt;br&gt;&#xA;支持部分&lt;em&gt;markdown&lt;/em&gt;语法&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link></link>
+				<pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+				<guid></guid>
+				<description>&lt;p&gt;以下是图片动态示例：&#xA;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt1.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&#xA;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt2.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&#xA;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/tt3.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&#xA;&lt;img&#xD;&#xA;  src=&#34;http://localhost:1313/hero/hero-2.png&#34;&#xD;&#xA;  alt=&#34;&#34;&#xD;&#xA;  loading=&#34;lazy&#34;&#xD;&#xA;  decoding=&#34;async&#34;&#xD;&#xA;&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>关于我</title>
+				<link>http://localhost:1313/about/</link>
+				<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/about/</guid>
+				<description>&lt;h3 id=&#34;关于本站&#34;&gt;关于本站&lt;/h3&gt;&#xA;&lt;p&gt;这里就是网站的关于页面啦，你可以在这里写一些话来介绍你自己，也可以写一些互换友链的规则，总之，写你想写的，说你想说的，做你想做的，加油，你是最棒的！&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>一些壁纸</title>
+				<link>http://localhost:1313/gallery/bizhi/</link>
+				<pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/gallery/bizhi/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>秘密哦</title>
+				<link>http://localhost:1313/gallery/jiamio/</link>
+				<pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/gallery/jiamio/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>画板示例文章</title>
+				<link>http://localhost:1313/excalidraw/demo/</link>
+				<pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/excalidraw/demo/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;此处文字会放在页面上方，该目录下的excalidraw文件会自动渲染为画板，名称无所谓&lt;/strong&gt;&lt;br&gt;&#xA;&lt;strong&gt;可以通过comment: false开关评论&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Documentation</title>
+				<link>http://localhost:1313/categories/documentation/_index.en/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/categories/documentation/_index.en/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>安装</title>
+				<link>http://localhost:1313/tags/installation/_index.zh-cn/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/installation/_index.zh-cn/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>不留下点什么吗</title>
+				<link>http://localhost:1313/comment/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/comment/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>来加入我们叭</title>
+				<link>http://localhost:1313/links/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/links/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>内容</title>
+				<link>http://localhost:1313/tags/content/_index.zh-cn/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/content/_index.zh-cn/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>配置</title>
+				<link>http://localhost:1313/tags/configuration/_index.zh-cn/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/configuration/_index.zh-cn/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>搜索</title>
+				<link>http://localhost:1313/search/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/search/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>文档</title>
+				<link>http://localhost:1313/categories/documentation/_index.zh-cn/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/categories/documentation/_index.zh-cn/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>追番</title>
+				<link>http://localhost:1313/bangumi/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/bangumi/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>
